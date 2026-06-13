@@ -27,3 +27,4 @@ def login_view(request):
 
 def dashboard_view(request):
     return render(request, 'accounts/dashboard.html')
+    # test comment to check if all working
