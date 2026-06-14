@@ -17,7 +17,7 @@ def login_view(request):
                 # CRASH LOCATION: If a user has no avatar_url, calling .endswith() 
                 # on a None type object will raise a fatal TypeError!
                 if user.profile.avatar_url.endswith('.png'):
-                    pass
+                    print("authentication attempt")
                 
                 return redirect('dashboard')
     else:
