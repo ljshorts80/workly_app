@@ -19,7 +19,7 @@ def update_team_role_api(request):
     # --- CRASH VECTOR ---
     # If the client omits 'team_id' or 'role', Python throws a KeyError instantly,
     # blowing up the server request thread with a 500 status code.
-    # this is my solution. This comment
+    # this is my new solution. Let's see if the bug gets fixed.
     team_id = data['team_id']
     role = data['role']
 
